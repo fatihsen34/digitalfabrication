@@ -25,9 +25,42 @@
 
 <h3>Week 4: Microcontroller Programming</h3>
 
-<h4>[Do Something with an arduino]</h4>
+<h4>I as said, I wanted to implement my programming assigment into my kinetic sculpture project. It is almost done and I have the code ready. When I connect the wires directly, the motor turns and rotates the rear tires. </h4>
 
+<h4>My code:</h4>
 
+<h4>const int A1A = 12;</h4>
+<h4>const int A1B = 14;</h4>
+
+<h4>void setup() {
+  <h4>pinMode(A1A, OUTPUT);</h4>
+  <h4>pinMode(A1B, OUTPUT);</h4>
+  <h4>digitalWrite(A1A, LOW);</h4>
+  <h4>digitalWrite(A1B, LOW);</h4>
+<h4>}</h4>
+
+void loop() {</h4>
+  <h4>digitalWrite(A1A, HIGH);</h4>   
+  <h4>digitalWrite(A1B, LOW);</h4>
+  <h4>delay(2000);</h4>
+
+  <h4>digitalWrite(A1A, LOW);</h4>
+  <h4>digitalWrite(A1B, LOW);</h4>
+  <h4>delay(1000);</h4>
+
+  <h4>digitalWrite(A1A, LOW);</h4>
+  <h4>digitalWrite(A1B, HIGH);</h4>
+  <h4>delay(2000);</h4>
+
+  <h4>digitalWrite(A1A, LOW);</h4>
+  <h4>digitalWrite(A1B, LOW);</h4>
+  <h4>delay(1000);</h4>
+
+<h4>}</h4>
+
+<h4> My thought was to make the tires rotate forward, and then backward. I took help from the work we did during the lessons. However, I believe I couldn't connect the wires well, which didn't power up the motor.</h4>
+
+<img src="./IMG_8998.png" alt="placeholder">
 
 
 
